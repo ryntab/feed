@@ -28,6 +28,9 @@ $ yarn add feed
 import { Feed } from "feed";
 
 const feed = new Feed({
+  namespaces: {
+    'xmlns:snf':"http://www.smartnews.be/snf"
+  }
   title: "Feed Title",
   description: "This is my personal feed!",
   id: "http://example.com/",
@@ -82,6 +85,14 @@ posts.forEach(post => {
     ],
     date: post.date,
     image: post.image
+    extra: {
+	  "snf:logo": {
+	     url: 'RegularLogo.png'
+	   },
+	   "snf:darkModeLogo": {
+	     url: 'DarkLogo.png'
+	   }
+	},
   });
 });
 
