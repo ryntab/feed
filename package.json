@@ -1,6 +1,6 @@
 {
-  "name": "feed",
-  "version": "4.2.2",
+  "name": "@ryntab/feed",
+  "version": "4.2.3",
   "description": "Feed is a RSS, Atom and JSON feed generator for Node.js, making content syndication simple and intuitive!",
   "homepage": "https://github.com/jpmonette/feed",
   "author": "Jean-Philippe Monette <contact@jpmonette.net>",
@@ -46,14 +46,17 @@
     "node": ">=0.4.0"
   },
   "bugs": {
-    "url": "https://github.com/jpmonette/feed/issues"
+    "url": "https://github.com/ryntab/feed/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jpmonette/feed.git"
+    "url": "git+https://github.com/ryntab/feed.git"
   },
   "files": [
     "lib"
   ],
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "directories": {
+    "lib": "lib"
+  }
 }
