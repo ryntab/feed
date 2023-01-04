@@ -57,9 +57,6 @@ export interface FeedOptions {
     image?: string;
     favicon?: string;
     copyright: string;
-	extra?: {
-        [key: string]: ExtraItem;
-    };
 }
 export interface Extension {
     name: string;

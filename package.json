@@ -8,7 +8,7 @@
   "main": "lib/feed.js",
   "types": "lib/feed.d.ts",
   "scripts": {
-    "build": "rm -rf lib/ && mkdir lib && tsc",
+    "build": "mkdir lib && tsc",
     "prepublish": "yarn build",
     "test": "jest --silent",
     "test-travis": "jest --coverage"
